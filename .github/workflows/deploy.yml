@@ -22,3 +22,4 @@ jobs:
           hostname
           date
           mkdir /home/ubuntu/test99
+          mkdir /home/ubuntu/test100
