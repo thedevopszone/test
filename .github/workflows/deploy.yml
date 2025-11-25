@@ -1,0 +1,23 @@
+name: Self-hosted Runner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-selfhosted:
+    runs-on: self-hosted
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Laufzeit-Infos
+        run: |
+          echo "Running on: ${{ runner.name }}"
+          echo "Labels: ${{ runner.labels }}"
+          echo "OS: $(uname -a)"
+
+      - name: Test Command
+        run: |
+          echo "Hello from self-hosted runner!"
+          hostname
+          date
