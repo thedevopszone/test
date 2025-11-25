@@ -21,3 +21,4 @@ jobs:
           echo "Hello from self-hosted runner!"
           hostname
           date
+          mkdir /home/ubuntu/test99
