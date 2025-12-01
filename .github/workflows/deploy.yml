@@ -23,3 +23,6 @@ jobs:
           date
           mkdir /home/runner/test99
           mkdir /home/runner/test100
+          rmdir /home/runner/test99
+          rmdir /home/runner/test100
+          touch test
